@@ -1,0 +1,35 @@
+h1{
+    position: relative;
+    left:20%;
+}
+body{
+    color: white;
+    overflow:hidden ;
+    background-color: black;
+
+}
+input{
+    height: 25px;   
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+.one,.two,.three,.four,.five,.six,.minus,.seven,.eight,.nine,.zero,.mul,.div,.plus,.calc{
+    width: 51px;
+    height: 30px;
+    margin-left: 1.5px;
+    
+}
+.none{
+    display: none;
+}
+div{
+    border: 2px solid white;
+    width: fit-content;
+}
+:where(.one,.two,.three,.four,.five,.six,.minus,.seve,.eight,.nine,.zero,.mul,.div,.plus,.calc):hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;    
+}
