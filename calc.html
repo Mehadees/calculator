@@ -4,42 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="calc.css" />
   </head>
   <body>
     <h1>CALCULATOR</h1>
     <br />
-    <div>
+    <div class="main">
       <table>
         <tr>
-          <td colspan="3"><input type="number" /></td>
-          <td><button class="calc">CALC</button></td>
+          <td colspan="3"><input id="inp" value="0" type="text" /></td>   
+          <td><button onclick="calc()" id="calc" class="calc">CALC</button></td>
+       
         </tr>
         <tr>
-          <td><button class="one">1</button></td>
-          <td><button class="two">2</button></td>
-          <td><button class="three">3</button></td>
-          <td><button class="plus">+</button></td>
+          <td><button onclick="display('1')" class="one">1</button></td>
+          <td><button onclick="display('2')" class="two">2</button></td>
+          <td><button onclick="display('3')" class="three">3</button></td>
+          <td><button onclick="display('+')" class="plus">+</button></td>
         </tr>
         <tr>
-          <td><button class="four">4</button></td>
-          <td><button class="five">5</button></td>
-          <td><button class="six">6</button></td>
-          <td><button class="minus">-</button></td>
+          <td><button onclick="display('4')" class="four">4</button></td>
+          <td><button onclick="display('5')" class="five">5</button></td>
+          <td><button onclick="display('6')" class="six">6</button></td>
+          <td><button onclick="display('-')" class="minus">-</button></td>
         </tr>
         <tr>
-          <td><button class="four">7</button></td>
-          <td><button class="five">8</button></td>
-          <td><button class="six">9</button></td>
-          <td><button class="mul">*</button></td>
+          <td><button onclick="display('6')" class="seven">7</button></td>
+          <td><button onclick="display('8')" class="eight">8</button></td>
+          <td><button onclick="display('9')" class="nine">9</button></td>
+          <td><button onclick="display('*')" class="mul">*</button></td>
         </tr>
         <tr>
-          <td><button class="none"></button></td>
-          <td><button class="zero">0</button></td>
-          <td><button class="none"></button></td>
-          <td><button class="div">/</button></td>
+          <td><button onclick="display('.')" class="dot">.</button></td>
+          <td><button onclick="display('0')" class="zero">0</button></td>
+          <td><button onclick="display('/')" class="div">/</button></td>
+          <td><button class="clear" id="clear" onclick="cleardis()">clear</button></td>
+
         </tr>
       </table>
     </div>
+    <script src="calc.js"></script>
   </body>
 </html>

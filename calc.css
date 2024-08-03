@@ -1,11 +1,21 @@
+.main{
+    position: relative;
+    top: 100px;
+    left: 610px;
+    background-color: rgb(18, 65, 65);
+  
+
+}
 h1{
     position: relative;
-    left:20%;
+    top: 100px;
+    left:40%;
 }
 body{
     color: white;
     overflow:hidden ;
     background-color: black;
+    
 
 }
 input{
@@ -15,10 +25,11 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     display: none;
 }
-.one,.two,.three,.four,.five,.six,.minus,.seven,.eight,.nine,.zero,.mul,.div,.plus,.calc{
+.one,.two,.three,.four,.five,.six,.minus,.seven,.eight,.nine,.zero,.mul,.div,.plus,.calc,.dot,.clear{
     width: 51px;
     height: 30px;
     margin-left: 1.5px;
+    transition: 0.14s;
     
 }
 .none{
@@ -28,8 +39,23 @@ div{
     border: 2px solid white;
     width: fit-content;
 }
-:where(.one,.two,.three,.four,.five,.six,.minus,.seve,.eight,.nine,.zero,.mul,.div,.plus,.calc):hover{
+:where(.one,.two,.three,.four,.five,.six,.minus,.seve,.eight,.nine,.zero,.mul,.div,.plus,.calc,.dot,.clear):hover{
     background-color: black;
     color: white;
-    border: 1px solid white;    
+    border: 1px solid white;   
+    width: 49px;
+    height:28px ; 
 }
+#result{
+    background-color: white;
+    height:15px;
+    width: fit-content;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    color: black;
+}
+button{
+    font-weight: 700;
+}
+
